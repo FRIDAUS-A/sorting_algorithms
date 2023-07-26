@@ -21,9 +21,9 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[index] > array[index + 1])
 			{
-				tmp_1 = array[index];
-				array[index] = array[index + 1];
-				array[index + 1] = tmp_1;
+				tmp_1 = array[index + 1];
+				array[index + 1] = array[index];
+				array[index] = tmp_1;
 				print_array(array, size);
 			}
 		}
