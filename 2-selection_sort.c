@@ -7,7 +7,7 @@ void selection_sort(int *array, size_t size)
 
 	if (array == NULL || size == 0)
 		return;
-	while (outer_index < size - 1)
+	while (outer_index < size)
 	{
 		tmp = array[outer_index];
 		check = 0;
