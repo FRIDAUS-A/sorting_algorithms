@@ -5,6 +5,8 @@ void selection_sort(int *array, size_t size)
 	size_t index, outer_index = 0;
 	int tmp, check_index, check;
 
+	if (array == NULL || size == 0)
+		return;
 	while (outer_index < size - 1)
 	{
 		tmp = array[outer_index];
